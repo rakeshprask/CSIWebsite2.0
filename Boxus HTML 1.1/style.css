@@ -589,16 +589,39 @@ div.pp_default .pp_loaderIcon
 
 .member-content-holder 
 {
-    width: 330px;
+    width: 350px;
+    padding: 90px 0px 50px 50px;
+    float: left;
+}
+
+.member-content-holder-sym 
+{
+    width: 300px;
     padding: 90px 50px 50px 50px;
     float: left;
 }
 
 .member-image-holder 
 {
-    width: 370px;
+    width: 350px;
     float: right;
 }
+
+
+
+.member-content-holder-opp 
+{
+    width: 350px;
+    padding: 90px 50px 50px 0px;
+    float: right;
+}
+
+.member-image-holder-opp 
+{
+    width: 350px;
+    float: left;
+}
+
 
 .member-image-holder img
 {
@@ -624,7 +647,10 @@ div.pp_default .pp_loaderIcon
 
 .member-content
 {
-    line-height: 26px;    
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;    
 }
 
 .image-slider-wrapper.img .image-slider li img
