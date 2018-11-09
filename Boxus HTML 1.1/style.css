@@ -4,7 +4,7 @@ body
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    color: #0b132b;    
+    color: #0b132b;
 }
 
 body a
@@ -135,11 +135,37 @@ body a:hover
 
 /* GENERAL SECTION */
 
+.section:before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: inherit;*/
+    z-index: -1;
+
+
+    background-image: url(demo-images/CSI_logo_Light_Uncropped.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+
+}
+
 .section
 {    
+    
     position: relative;
     z-index: 1;
 }
+
+
 
 .section-num
 {   
@@ -171,12 +197,12 @@ body a:hover
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 109px;
-    width: 245px;
+    width: 350px;
     word-break: break-all;
     line-height: 83px;
     margin-top: 10px;
     color: #dee4f5;
-    margin-left: 115px;
+    margin-left: 50px;
     text-transform: uppercase;
     letter-spacing: -3px;
     padding: 0;
@@ -260,10 +286,10 @@ body a:hover
     padding-bottom: 170px;
     min-height: calc(100vh - 170px);
     background-color: #0b132b; 
-    background-image:url(demo-images/background_img_01b.jpg); 
-    background-repeat: repeat; 
+    /*background-image:url(demo-images/background_img_01b.jpg);*/ 
+    /*background-repeat: repeat; 
     background-position: center top; 
-    background-size: cover;
+    background-size: cover;*/
     z-index: 10;
 }
 
@@ -271,6 +297,21 @@ body a:hover
 {
     width: 160px !important;    
     padding-top: 150px;
+}
+
+.csi-logo
+{
+    width: 480px !important;    
+    padding-top: 150px;
+}
+
+.background-img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-image:url(demo-images/CSI_logo_Light.png);
 }
 
 h1.big-title
@@ -589,10 +630,27 @@ div.pp_default .pp_loaderIcon
 
 .member-content-holder 
 {
-    width: 350px;
-    padding: 90px 0px 50px 50px;
+    width: 300px;
+    padding: 90px 50px 50px 50px;
     float: left;
 }
+
+.content-opp
+{
+    float: right;
+}
+
+.member-image-holder 
+{
+    width: 400px;
+    float: right;
+}
+
+.img-opp
+{
+    float: left;
+}
+
 
 .member-content-holder-sym 
 {
@@ -600,28 +658,6 @@ div.pp_default .pp_loaderIcon
     padding: 90px 50px 50px 50px;
     float: left;
 }
-
-.member-image-holder 
-{
-    width: 350px;
-    float: right;
-}
-
-
-
-.member-content-holder-opp 
-{
-    width: 350px;
-    padding: 90px 50px 50px 0px;
-    float: right;
-}
-
-.member-image-holder-opp 
-{
-    width: 350px;
-    float: left;
-}
-
 
 .member-image-holder img
 {
@@ -643,6 +679,7 @@ div.pp_default .pp_loaderIcon
     padding-bottom: 50px;
     color: #3a506b;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .member-content
@@ -1247,6 +1284,13 @@ footer
 /* RESPONSIVE PART */
 
 @media screen and (max-width: 1270px) {   
+    .csi-logo
+    {
+        max-width: 80%;
+        padding-bottom: 50px;
+        /*padding-left: 25px;
+        padding-right: 25px;*/
+    }
 
     .content-1170 
     {
@@ -1400,7 +1444,15 @@ footer
 
 }
 
-@media screen and (max-width: 1020px) {    
+@media screen and (max-width: 1020px) {  
+
+    .csi-logo
+    {
+        max-width: 80%;
+        padding-bottom: 50px;
+        /*padding-left: 25px;
+        padding-right: 25px;*/
+    }  
 
     .content-1170 
     {
@@ -1599,6 +1651,14 @@ footer
 
 @media screen and (max-width: 925px) {  
 
+    .csi-logo
+    {
+        max-width: 80%;
+        padding-bottom: 50px;
+        /*padding-left: 25px;
+        padding-right: 25px;*/
+    }
+
     .intro-page
     {
         min-height: 0;
@@ -1703,6 +1763,19 @@ footer
 
 @media screen and (max-width: 650px) { 
 
+    .csi-logo
+    {
+        max-width: 80%;
+        padding-bottom: 50px;
+        /*padding-left: 25px;
+        padding-right: 25px;*/
+    }
+
+    .grid-item.p_one_half
+    {
+        width: 100%;
+        float: none;
+    }
 
     .member-content-holder
     {
@@ -1710,7 +1783,19 @@ footer
         float: none;
     }
 
+    .member-content-holder-opp
+    {
+        width: 90%;
+        float: none;
+    }
+
     .member-image-holder
+    {
+        width: 100%;
+        float: none;
+    }
+
+    .member-image-holder-opp
     {
         width: 100%;
         float: none;
@@ -1725,6 +1810,23 @@ footer
 
 
 @media screen and (max-width: 350px) { 
+    .csi-logo
+    {
+        max-width: 80%;
+        padding-bottom: 50px;
+        /*padding-left: 25px;
+        padding-right: 25px;*/
+    }
+
+    .p_one_half 
+    {
+        width: 100%
+    }
+
+    .member-content-holder-sym
+    {
+        width: 100%;
+    }  
 
     .section-num 
     {
