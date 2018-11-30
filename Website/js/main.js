@@ -277,6 +277,10 @@ jQuery(window).load(function () {
 });
 
 
+function arrowClick() {
+    jQuery('#mmServices').click();
+}
+
 jQuery(window).resize(function () {
 
     //Show-Hide Mobile Menu        
