@@ -26,26 +26,42 @@
     <body>
 
         <!-- Preloader Gif -->
-        <table class="doc-loader">
+        <!---<table class="doc-loader">
             <tr>
                 <td>
                     <img src="images/ajax-document-loader.gif" alt="Loading..." />
                 </td>
             </tr>
-        </table>
+        </table>--->
+
+        <!-- <div class="preloader-bg">
+            <div class="preloader">
+                <hr><hr><hr><hr><hr>
+            </div>
+        </div> -->
+
+        <div class="blub-bg">
+            <div class="blub">
+              <div class="blub-1"></div>
+              <div class="blub-2"></div>
+              <div class="blub-3"></div>
+            </div>
+        </div>    
+
 
         <!-- Menu -->
         <div class="menu-wrapper center-relative">
             <nav id="header-main-menu">
                 <div class="mob-menu">MENU</div>
                 <ul class="main-menu sm sm-clean">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services" id="mmServices">About</a></li>
-                    <li><a href="#portfolio">Events</a></li>
-                    <li><a href="#about">Team</a></li>
+                    <li><a id="menu-home" href="#home">Home</a></li>
+                    <li><a id="menu-services" href="#services">About</a></li>
+                    <li><a id="menu-portfolio" href="#portfolio">Events</a></li>
+                    <li><a id="menu-about" href="#about">Team</a></li>
+                    <li><a id="menu-contact" href="#footer">Contact Us</a></li>
                     <!---<li><a href="#news">News</a></li>
                     <li><a href="#video">Video</a></li>
-                    <li><a href="#skills">Skills</a></li>--->
+                    <li><a href="#skills">Skills</a></li>
                     <li>
 					    <button class="dropbtn">Contact 
 					    	<i class="fa fa-caret-down"></i>
@@ -56,7 +72,7 @@
 				    		</div>
 					    </button>
 					    
-					  </li>
+					  </li>--->
 
 					
 <!---
@@ -72,7 +88,7 @@
 
         <!-- Home -->
 
-        <div id="home" class="intro-page">
+        <div id="home" class="intro-page intro-page-bg-img">
             <div class="block content-1170 center-relative center-text">
                 <img class="csi-logo" src="demo-images/CSI_logo_Light.png" alt="Boxus" />
                 <br>
@@ -88,7 +104,8 @@
 
                 
             </div>
-            <a class="arrow" onclick="getElementById('mmServices').click()"></a>
+            <!-- <a class="arrow" onclick="getElementById('menu-services').click()"></a> -->
+            <div class="scroll-down"></div>
         </div>
 
         
@@ -159,6 +176,9 @@
                             <p class="event-position">Conference</p>
                             <div class="event-content">
                                 Devspace is one of the biggest student-organised developer conferences in South India. <br>
+                                Visit 
+                                <a href="https://devspace.tech/" target="_blank" class="devspace-link">devspace.tech</a>
+                                 for more information.
                             </div>
                         </div>
                         <div class="one_half last">
@@ -173,7 +193,7 @@
                         <div class="clear"></div>
 
                         <div class="p_one">
-                            <a href="#" style="color: blue;">Devspace link ></a>
+                            
                         </div>
                     </div>
 
@@ -257,11 +277,11 @@
 
                             <div class="">
                                 <div class="member-content-holder event">
-                                    <h4 class="event-name">Core Committee Selections</h4>
-                                    <p class="event-position">Offline</p>
+                                    <h4 class="event-name">Riddler</h4>
+                                    <p class="event-position">Online</p>
 
                                     <div class="event-content">
-                                        How to screw kids over 101<br>
+                                        You thought you were smart? LOL no.<br>
                                     </div>
                                 </div>
                             </div>
@@ -272,15 +292,30 @@
 
 
                             <div class="member-content-holder content-opp event">
-                                <h4 class="event-name">Riddler</h4>
-                                <p class="event-position">Online</p>
+                                <h4 class="event-name">Wrapped</h4>
+                                <p class="event-position">Newsletter</p>
                                 <div class="event-content">
-                                    You thought you were smart? LOL no.
+                                    Wrapped.
                                     <br>
                                 </div>
                             </div>
                             <div class="member-image-holder img-opp">
                                 <img src="demo-images/riddler.png alt="">
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class="">
+                                <div class="member-content-holder event">
+                                    <h4 class="event-name">Zero Access</h4>
+                                    <p class="event-position">Workshop</p>
+
+                                    <div class="event-content">
+                                        You thought you were smart? LOL no.<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-image-holder">
+                                <img src="demo-images/ccs.png" alt="">
                             </div>
                             <div class="clear"></div>
 
@@ -296,101 +331,6 @@
                     <div class="grid" id="portfolio-grid">
                         <div class="grid-sizer"></div>
 
-<!---                       
-                        <div class="grid-item element-item p_one" id="devspace">
-                            <a href="#devspace">
-                                <img src="demo-images/devspace.jpg" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        
-                                        <p class="portfolio-text">DEVSPACE</p>
-                                        <p class="portfolio-sec-text">a developers conference</p>
-                                        <p class="portfolio-tert-text">a developers conference</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        
-                        
-                         <div class="grid-item element-item p_one_half">
-                            <a href="#" onclick="return false;">
-                                <img src="demo-images/cb.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                        
-                                        <p class="portfolio-text">ClickBait</p>
-                                        <p class="portfolio-tert-text">One of our gravitas thingies</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid-item element-item p_one_half">
-                            <a href="#" onclick="return false;">
-                                <img src="demo-images/lt.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                       
-                                        <p class="portfolio-text">Laser Tag</p>
-                                        <p class="portfolio-tert-text">One of our gravitas thingies</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="grid-item element-item p_one_half">
-                            <a href="#" onclick="return false;">
-                                <img src="demo-images/subg.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                       
-                                        <p class="portfolio-text">SUBG</p>
-                                        <p class="portfolio-tert-text">That thingy that will scare the shit out of you when you think of salmon</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        
-                        <div class="grid-item element-item p_one_half">
-                            <a href="#" onclick="return false;">
-                                <img src="demo-images/uth.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                      
-                                        <p class="portfolio-text">Under The Hood</p>
-                                        <p class="portfolio-tert-text">One of our gravitas thingies</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="grid-item element-item p_one_half">
-                            <a href="#">
-                                <img src="demo-images/ccs.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                       
-                                        <p class="portfolio-text">Core Committee Selections</p>
-                                        <p class="portfolio-tert-text">CCS</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="grid-item element-item p_one_half">
-                            <a href="#" onclick="return false;">
-                                <img src="demo-images/riddler.png" alt="">
-                                <div class="portfolio-text-holder">
-                                    <div class="portfolio-text-wrapper">
-                                      
-                                        <p class="portfolio-text">Riddler</p>
-                                        <p class="portfolio-tert-text">Online</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        --->
                     </div>
                         
                 </div>
@@ -432,7 +372,7 @@
                         <div class="">
 	                        	<div class="member-content-holder">
 	                        	    <h4 class="member-name">Akshay Gugale</h4>
-	                        	    <p class="member-position">President</p>
+	                        	    <p class="member-position">Chair</p>
 
 	                        	    <div class="member-content">
 	                        	        I tech things seriously.<br>
@@ -447,7 +387,7 @@
 
                         	<div class="member-content-holder content-opp">
                         	    <h4 class="member-name">Divyanshu Nandwani</h4>
-                        	    <p class="member-position">Vice President</p>
+                        	    <p class="member-position">Co-Vice Chair</p>
                         	    <div class="member-content">
                         	        Knows all the 50 shades of #808080.<br>
                         	    </div>
@@ -462,7 +402,7 @@
                         	<div class="">
 	                        	<div class="member-content-holder">
 	                        	    <h4 class="member-name">Mahtab Sahi</h4>
-	                        	    <p class="member-position">Vice President</p>
+	                        	    <p class="member-position">Co-Vice Chair</p>
 
 	                        	    <div class="member-content">
 	                        	        Don't panic. I'm a unicorn🦄.<br>
@@ -477,7 +417,7 @@
 
                         	<div class="member-content-holder content-opp">
                         	    <h4 class="member-name">Tarush Nagpal</h4>
-                        	    <p class="member-position">Vice President</p>
+                        	    <p class="member-position">Co-Vice Chair</p>
                         	    <div class="member-content">
                         	        Not a nerd. Just smarter than you.<br>
                         	    </div>
@@ -487,6 +427,61 @@
                         	</div>
                         	<div class="clear"></div>
 
+                            
+                            <div class="member-content-holder">
+                                <h4 class="member-name">Janani Kannan</h4>
+                                <p class="member-position">General Secretary</p>
+                                <div class="member-content">
+                                    Smile... It kills people!<br>
+                                </div>
+                            </div>
+                            <div class="member-image-holder">
+                                <img src="demo-images/Janani.jpg" alt="">
+                            </div>
+                            <div class="clear"></div>
+
+
+                            <div class="member-content-holder content-opp">
+                                <h4 class="member-name">Radhika Singhania</h4>
+                                <p class="member-position">Treasurer</p>
+                                <div class="member-content">
+                                    Too Rad to be sad.<br>
+                                </div>
+                            </div>
+                            <div class="member-image-holder img-opp">
+                                <img src="demo-images/Radhika.jpg" alt="">
+                            </div>
+                            <div class="clear"></div>
+
+
+                            <div class="member-content-holder">
+                                <h4 class="member-name">Mansimran Singh Anand</h4>
+                                <p class="member-position">Director of Events</p>
+                                <div class="member-content">
+                                    A coding freak, decoding life...<br>
+                                </div>
+                            </div>
+                            <div class="member-image-holder">
+                                <img src="demo-images/Mansimran.jpg" alt="">
+                            </div>
+                            <div class="clear"></div>
+
+
+                            <div class="">
+                                <div class="member-content-holder content-opp">
+                                    <h4 class="member-name">Pranshu Pranjal</h4>
+                                    <p class="member-position">HR & Creative Head</p>
+
+                                    <div class="member-content">
+                                       I was supposed to be creative here but sorry not in the mood for it.
+                                       <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-image-holder img-opp">
+                                <img src="demo-images/Pranshu.jpg" alt="">
+                            </div>
+                            <div class="clear"></div>
 
 
                             <div class="">
@@ -524,7 +519,7 @@
                             <div class="">
                                 <div class="member-content-holder">
                                     <h4 class="member-name">Mayank Agarwal</h4>
-                                    <p class="member-position">Technical Mentor</p>
+                                    <p class="member-position">Core Lead - Technical</p>
 
                                     <div class="member-content">
                                         Quotes won't work unless you do!<br>
@@ -537,77 +532,18 @@
                             <div class="clear"></div>
 
 
-                            <div class="member-content-holder content-opp">
-                                <h4 class="member-name">Radhika Singhania</h4>
-                                <p class="member-position">General Secretary</p>
-                                <div class="member-content">
-                                    Too Rad to be sad.<br>
-                                </div>
-                            </div>
-                            <div class="member-image-holder img-opp">
-                                <img src="demo-images/Radhika.jpg" alt="">
-                            </div>
-                            <div class="clear"></div>
-
-
-
-
                             <div class="">
-                                <div class="member-content-holder">
-                                    <h4 class="member-name">Pranshu Pranjal</h4>
-                                    <p class="member-position">Director of Finance</p>
-
-                                    <div class="member-content">
-                                       I was supposed to be creative here but sorry not in the mood for it.
-                                       <br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="member-image-holder">
-                                <img src="demo-images/Pranshu.jpg" alt="">
-                            </div>
-                            <div class="clear"></div>
-
-
-                            <div class="member-content-holder content-opp">
-                                <h4 class="member-name">Janani Kannan</h4>
-                                <p class="member-position">Director of HR and Documentation</p>
-                                <div class="member-content">
-                                    Smile... It kills people!<br>
-                                </div>
-                            </div>
-                            <div class="member-image-holder img-opp">
-                                <img src="demo-images/Janani.jpg" alt="">
-                            </div>
-                            <div class="clear"></div>
-
-
-
-                            <div class="">
-                                <div class="member-content-holder">
+                                <div class="member-content-holder content-opp">
                                     <h4 class="member-name">Kabeer Andrabi</h4>
-                                    <p class="member-position">Core Lead</p>
+                                    <p class="member-position">Core Lead - Management</p>
 
                                     <div class="member-content">
                                         With a great beard comes great responsibility.<br>
                                     </div>
                                 </div>
                             </div>
-                            <div class="member-image-holder">
-                                <img src="demo-images/Kabeer.jpg" alt="">
-                            </div>
-                            <div class="clear"></div>
-
-
-                            <div class="member-content-holder content-opp">
-                                <h4 class="member-name">Mansimran Singh Anand</h4>
-                                <p class="member-position">Core Lead</p>
-                                <div class="member-content">
-                                    A coding freak, decoding life...<br>
-                                </div>
-                            </div>
                             <div class="member-image-holder img-opp">
-                                <img src="demo-images/Mansimran.jpg" alt="">
+                                <img src="demo-images/Kabeer.jpg" alt="">
                             </div>
                             <div class="clear"></div>
      
@@ -661,18 +597,28 @@
 --->
         <!-- Footer -->
 
-        <footer>
+        <footer id="footer">
             <div class="footer content-1170 center-relative">
                 <ul>
-                    <li class="copyright-footer">
-                        Find us on:
+                    <li class="tag-footer">
+                        <strong>CONTACT US:</strong>
                     </li>
+                    </br>
+                    <li class="tag-footer">
+                        <a href="mailto:askcsivit@gmail.com" target="_blank">askcsivit@gmail.com</a>
+                        </br>
+                        <a href="tel:+91-123456789" target="_blank">+91-123456789</a>
+                    </li>
+                    </br>
                     <li class="social-footer">
                     	<a href="http://www.facebook.com/csivitu/" target="_blank"><span class="fa fa-facebook"></span></a>
 			      		<a href="http://www.instagram.com/csivitu/" target="_blank"><span class="fa fa-instagram"></span></a>
 			      		<a href="http://twitter.com/csivitu" target="_blank"><span class="fa fa-twitter"></span></a>
-                        <a href="http://github.com/csivit" target="_blank"><span class="fa fa-github"></span></a>
+                        <a href="http://github.com/csivitu" target="_blank"><span class="fa fa-github"></span></a>
+                        </br>
+                        @csivitu
                     </li>
+                    
                 </ul>
             </div>
         </footer>
