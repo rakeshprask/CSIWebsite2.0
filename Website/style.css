@@ -1,11 +1,15 @@
-/*html 
-{ 
-    overflow: hidden; 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
-
 ::-webkit-scrollbar {
-    display: none;
-}*/
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 
 :root
 {
@@ -210,7 +214,7 @@ body a:hover
   animation: blub 1.5s ease-in-out infinite;
 }
 .blub-1 {
-  background: #6BD089;
+  background: #212543;
   width: 150px;
   height: 150px;
 }
@@ -219,7 +223,7 @@ body a:hover
   left: calc(15px);
   width: calc(120px);
   height: calc(120px);
-  background: #138535;
+  background: #1d2142;
   animation-delay: 0.2s;
 }
 .blub-3 {
@@ -227,7 +231,7 @@ body a:hover
   left: calc(30px);
   width: calc(90px);
   height: calc(90px);
-  background: #085820;
+  background: #181d41;
   animation-delay: 0.4s;
 }
 @keyframes blub {
@@ -303,6 +307,19 @@ body a:hover
     letter-spacing: 0.03cm;
 }
 
+.main-menu.sm-clean button
+{    
+    background-color: transparent;
+    border: 0;
+    font-size: 13px;
+    line-height: 40px;
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color .2s linear;
+    text-transform: uppercase;
+    letter-spacing: 0.03cm;
+}
+
 .main-menu.sm-clean .sub-menu a 
 {
     font-size: 11px;
@@ -343,6 +360,11 @@ body a:hover
 .active #menu-home
 {
     /*color: var(--highlight-yellow) !important;*/
+}
+
+.active #menu-contact
+{
+    color: var(--highlight-yellow) !important;
 }
 
 .mob-menu
@@ -644,6 +666,7 @@ body a:hover
 
 .intro-page 
 {
+    /*min-height: 90vh;*/
     min-height: 100vh;
     padding-bottom: 0px;
     /*padding-bottom: 170px;
@@ -1666,101 +1689,22 @@ footer
     font-size: 20px;
 }
 
+.contact-footer
+{
+    margin: 0 10px;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.contact-details-footer
+{
+    margin: 0 10px;
+    font-size: 20px;
+    padding-bottom: 70px;
+}
+
 /* END FOOTER */
 
-
-
-/* SINGLE PORTFOLIO PAGE */
-
-#portfolio-1
-{
-    background-color: #221c5a;
-    background-image:url("demo-images/background_img_05b.jpg"); 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: auto; 
-}
-
-#portfolio-2
-{
-
-    background-color: #221c5a;
-    background-image: url(demo-images/item_background_01.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% auto;
-}
-    
-.single-portfolio .menu-wrapper
-{
-    display: none !important;
-}
-
-.single-portfolio article
-{
-    padding-top: 230px;
-}
-
-.single-portfolio article .entry-content
-{
-    background-color: var(--text-color);
-    padding-bottom: 50px;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.single-portfolio .x-close
-{
-    top: -60px;
-    right: -60px;
-    background-color: #26276d;
-    line-height: 0;
-    font-size: 0;
-    width: 60px;
-    height: 60px
-}
-
-.single-portfolio .x-close img
-{
-    opacity: 0.4;
-    transition: opacity .2s linear;
-    width: 30px;
-    height: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.single-portfolio .x-close:hover img
-{
-    opacity: 1;
-}
-
-.single-portfolio .entry-content .one
-{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.single-portfolio .entry-content .one_half
-{
-    width: 435px;
-    padding-left: 100px;
-}
-
-.single-portfolio .entry-content .one_half.last
-{
-    padding-left: 0;
-    padding-right: 100px;
-}
-
-.single-portfolio .entry-content h1 
-{
-    padding: 0;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-/* END SINGLE PORTFOLIO */
 
 
 /* RESPONSIVE PART */
