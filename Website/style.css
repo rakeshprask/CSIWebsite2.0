@@ -214,7 +214,7 @@ body a:hover
   animation: blub 1.5s ease-in-out infinite;
 }
 .blub-1 {
-  background: #212543;
+  background: #f36f7c;
   width: 150px;
   height: 150px;
 }
@@ -223,7 +223,7 @@ body a:hover
   left: calc(15px);
   width: calc(120px);
   height: calc(120px);
-  background: #1d2142;
+  background: #ee3244;
   animation-delay: 0.2s;
 }
 .blub-3 {
@@ -231,7 +231,7 @@ body a:hover
   left: calc(30px);
   width: calc(90px);
   height: calc(90px);
-  background: #181d41;
+  background: #e91328;
   animation-delay: 0.4s;
 }
 @keyframes blub {
