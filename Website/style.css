@@ -214,7 +214,7 @@ body a:hover
   animation: blub 1.5s ease-in-out infinite;
 }
 .blub-1 {
-  background: #f36f7c;
+  background: #222963;
   width: 150px;
   height: 150px;
 }
@@ -223,7 +223,7 @@ body a:hover
   left: calc(15px);
   width: calc(120px);
   height: calc(120px);
-  background: #ee3244;
+  background: #111532;
   animation-delay: 0.2s;
 }
 .blub-3 {
@@ -231,7 +231,7 @@ body a:hover
   left: calc(30px);
   width: calc(90px);
   height: calc(90px);
-  background: #e91328;
+  background: #080a17;
   animation-delay: 0.4s;
 }
 @keyframes blub {
@@ -434,7 +434,7 @@ body a:hover
     z-index: -1;
 
 
-    background-image: url(demo-images/CSI_logo_Light_Uncropped.png) !important;
+    /*background-image: url(demo-images/CSI_logo_Light_Uncropped.png) !important;*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -1257,6 +1257,28 @@ footer
 
 /* END FOOTER */
 
+
+
+/* Error Page */
+
+.error-page {
+    min-height: 100vh;
+    padding-bottom: 0px;
+    background-color: #0b132b; 
+    z-index: 10;
+}
+
+.error-box {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    
+}
+
+/* Error Page End */
 
 
 /* RESPONSIVE PART */
