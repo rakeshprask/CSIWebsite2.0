@@ -18,8 +18,33 @@ jQuery(document).ready(function () {
     jQuery('input, textarea').blur(function () {
         jQuery(this).attr('placeholder', jQuery(this).data('placeholder'));
     });
+if(jQuery(window).width()<=800)
+{
+    //Hide Menu bar till scroll after certain element - Pranshu
+    jQuery(".sticky-wrapper").hide(); //Hide the navigation bar first
 
+    jQuery(window).scroll(function () {  //Listen for the window's scroll event
+        if (isScrolledAfterElement("#events")) { //if it has scrolled beyond the #content elment
+            jQuery(".sticky-wrapper").fadeIn();  //Show the navigation bar
+        } else {
+            jQuery(".sticky-wrapper").fadeOut(); //Else hide it
+            // jQuery(".sticky-wrapper").hide(); //If you don't want to be it abrupt use this
+        }
+    });
 
+    //Function that returns true if the window has scrolled beyond the given element
+    function isScrolledAfterElement(elem) {
+        var $elem = jQuery(elem);
+        var $window = jQuery(window);
+
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+
+        var elemTop = $elem.offset().top;
+
+        return elemTop <= docViewBottom;
+    }
+}
     //Portfolio
     var grid = jQuery('.grid').imagesLoaded(function () {
         grid.isotope({
