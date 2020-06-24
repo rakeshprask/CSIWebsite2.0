@@ -29,5 +29,5 @@
 
 [csivitu-shield]: https://img.shields.io/badge/csivitu-csivitu-blue
 [csivitu-url]: https://csivit.com
-[issues-shield]: https://github.com/csivitu/CSIWebsite2.0/issues
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/csivitu/CSIWebsite2.0/issues
