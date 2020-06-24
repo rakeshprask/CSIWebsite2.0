@@ -14,7 +14,7 @@
   <h3 align="center">CSI Website</h3>
 
   <p align="center">
-    CTF challenges for `csictf` 2020.
+    Website for CSI.
     <br />
     <a href="https://github.com/csivitu/CSIWebsite2.0"><strong>Explore the docs »</strong></a>
     <br />
