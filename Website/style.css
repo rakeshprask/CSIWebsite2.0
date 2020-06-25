@@ -1154,7 +1154,10 @@ div.pp_default .pp_loaderIcon
 {
     padding-top: 50px;
 }
-
+.event-new
+{
+    padding-top: 25px;
+}
 .event-name
 {
     /*line-height: 26px;
