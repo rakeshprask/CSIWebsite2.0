@@ -1473,7 +1473,7 @@ footer
     .member-content-holder 
     {
         width: 275px;
-        padding: 50px;
+        padding: 25px;
     }
 
     .member-image-holder 
@@ -1509,7 +1509,14 @@ footer
         padding-left: 0;
         padding-right: 5%;
     }
-
+    .newctf
+    {
+        padding-top: 0px;
+    }
+    .newctfeventname
+    {
+        padding-top: 8px;
+    }
 }
 
 @media screen and (max-width: 1100px) {    
@@ -1685,7 +1692,7 @@ footer
     .member-content-holder 
     {
         width: 40%;
-        padding: 10% 5% 5% 5%;
+        padding: 2% 5% 5% 5%;
     }
 
     .member-image-holder 
